@@ -1,45 +1,18 @@
 #board {
-  width: 800px;
+  width: 600px;
   height: 600px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.square {
+  width: calc(100% / var(--size));
+  height: calc(100% / var(--size));
+  float: left;
   border: 1px solid black;
-  position: relative;
 }
 
-.image-container {
-  border: 1px solid black;
-  position: absolute;
-  cursor: move;
-}
-
-.image-container.selected {
-  border: 2px solid blue;
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.resize-handle {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  background-color: black;
-  cursor: se-resize;
-}
-
-#controls {
-  margin-top: 10px;
-}
-
-#controls > div {
-  margin-bottom: 10px;
-}
-
-#controls label {
-  display: inline-block;
-  width: 100px;
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
